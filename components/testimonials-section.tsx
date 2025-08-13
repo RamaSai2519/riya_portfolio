@@ -25,40 +25,31 @@ export default function TestimonialsSection() {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      title: "CEO, TechStyle Fashion",
-      company: "TechStyle Fashion",
+      name: "Maya Patel",
+      title: "Volunteer Coordinator",
+      company: "Local Nonprofit",
       image: "/professional-woman-ceo.png",
       rating: 5,
       testimonial:
-        "Working with this digital marketing expert transformed our online presence completely. The SEO strategy alone increased our organic traffic by 300% and generated over $2.5M in additional revenue. Absolutely exceptional work!",
+        "Reliable, proactive, and thoughtful. Helped us plan a consistent month of posts and reported simple insights we could act on. Great attitude and follow-through!",
     },
     {
-      name: "Michael Chen",
-      title: "Marketing Director, CloudTech Solutions",
-      company: "CloudTech Solutions",
+      name: "Alex Kim",
+      title: "Mentor",
+      company: "Marketing Community",
       image: "/professional-marketing-director.png",
       rating: 5,
       testimonial:
-        "The B2B lead generation system they developed for us was a game-changer. We saw a 400% increase in qualified leads and reduced our cost per lead by 60%. Their analytical approach and attention to detail is unmatched.",
+        "Picks up feedback quickly and iterates well. Strong effort on fundamentals like briefs, checklists, and UTM tracking. Promising early-career marketer.",
     },
     {
-      name: "Emily Rodriguez",
-      title: "Founder, Urban Wellness Co.",
-      company: "Urban Wellness Co.",
+      name: "Sara Lopez",
+      title: "Small Business Owner",
+      company: "Home Bakery",
       image: "/professional-woman-founder-headshot.png",
       rating: 5,
       testimonial:
-        "Our social media transformation was incredible! From struggling with engagement to building a community of 50K+ followers with 500% higher engagement rates. The content strategy was brilliant and perfectly aligned with our brand.",
-    },
-    {
-      name: "David Park",
-      title: "VP Marketing, FinTech Innovators",
-      company: "FinTech Innovators",
-      image: "/professional-man-vp-marketing-headshot.png",
-      rating: 5,
-      testimonial:
-        "The content marketing strategy positioned us as thought leaders in our industry. We achieved 250% organic traffic growth and won 3 industry awards. Their strategic thinking and execution are world-class.",
+        "Helped me clean up page titles and descriptions and showed me how to track results. Clear communication and helpful documentation.",
     },
   ]
 
@@ -81,9 +72,8 @@ export default function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className={`border-0 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1 ${
-                isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
-              }`}
+              className={`border-0 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1 ${isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
+                }`}
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <CardContent className="p-8">
@@ -123,7 +113,7 @@ export default function TestimonialsSection() {
               ))}
             </div>
             <div className="text-slate-700">
-              <span className="font-bold">5.0</span> average rating from <span className="font-bold">50+</span> clients
+              <span className="font-bold">5.0</span> early feedback from mentors and first collaborators
             </div>
           </div>
         </div>

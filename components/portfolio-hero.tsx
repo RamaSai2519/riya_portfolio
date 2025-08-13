@@ -13,7 +13,7 @@ export default function PortfolioHero() {
     setIsVisible(true)
   }, [])
 
-  const filters = ["All", "SEO Magic", "Social Sparkle", "Content Love", "Analytics", "Email Campaigns"]
+  const filters = ["All", "SEO Basics", "Social Posts", "Content Briefs", "Email Setup"]
 
   return (
     <section className="pt-24 pb-16 bg-gradient-to-br from-pink-50 via-rose-50 to-purple-50">
@@ -29,8 +29,8 @@ export default function PortfolioHero() {
             <Sparkles className="h-8 w-8 text-purple-500 animate-pulse" />
           </div>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed mb-8">
-            Discover my journey creating stunning campaigns that sparkle with creativity and drive meaningful growth for
-            beautiful brands across diverse industries.
+            A small collection of early projects and practice work. Each one helped me learn core skills and improve my
+            process.
           </p>
 
           {/* Filter and View Controls */}

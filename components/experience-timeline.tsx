@@ -25,44 +25,31 @@ export default function ExperienceTimeline() {
 
   const experiences = [
     {
-      year: "2023 - Present",
-      title: "Senior Digital Marketing Strategist",
-      company: "Creative Digital Agency",
-      location: "San Francisco, CA",
+      year: "2025",
+      title: "Marketing Apprentice (Freelance Projects)",
+      company: "Independent / Volunteer",
+      location: "Remote",
       description:
-        "Leading comprehensive digital marketing campaigns for Fortune 500 clients, resulting in an average 200% increase in ROI and 150% growth in organic traffic.",
-      achievements: ["Managed $2M+ in ad spend", "Led team of 8 specialists", "Launched 50+ successful campaigns"],
+        "Completed a handful of small projects across SEO, social media, and content. Collaborated with mentors and used feedback loops to improve outcomes.",
+      achievements: ["Shipped 3–5 mini projects", "Built simple analytics dashboards", "Learned to brief and report"],
     },
     {
-      year: "2021 - 2023",
-      title: "Digital Marketing Manager",
-      company: "TechStart Solutions",
-      location: "Austin, TX",
+      year: "2024",
+      title: "Digital Marketing Trainee",
+      company: "Community Nonprofit",
+      location: "Remote",
       description:
-        "Developed and executed multi-channel marketing strategies for B2B SaaS companies, focusing on lead generation and customer acquisition.",
-      achievements: ["Increased lead quality by 180%", "Reduced CAC by 45%", "Built marketing automation systems"],
+        "Supported social posts, basic SEO checks, and email newsletter setup. Focused on consistency and measurement basics.",
+      achievements: ["Set up newsletter workflow", "Drafted content calendar", "Documented simple SEO fixes"],
     },
     {
-      year: "2019 - 2021",
-      title: "Marketing Specialist",
-      company: "Growth Marketing Co.",
-      location: "Denver, CO",
+      year: "2024",
+      title: "Course Projects",
+      company: "Online Programs",
+      location: "Remote",
       description:
-        "Specialized in content marketing and SEO optimization for e-commerce brands, driving significant improvements in search rankings and conversion rates.",
-      achievements: ["Improved organic traffic by 300%", "Created 200+ content pieces", "Optimized 50+ websites"],
-    },
-    {
-      year: "2018 - 2019",
-      title: "Junior Marketing Analyst",
-      company: "Digital Insights Inc.",
-      location: "Chicago, IL",
-      description:
-        "Analyzed marketing performance data and provided actionable insights to optimize campaign effectiveness and budget allocation.",
-      achievements: [
-        "Analyzed 100+ campaigns",
-        "Improved reporting efficiency by 60%",
-        "Identified key growth opportunities",
-      ],
+        "Hands-on assignments covering keyword research, basic on-page SEO, content briefs, and UTM tracking.",
+      achievements: ["Completed capstone project", "Practiced A/B test setup", "Created content brief templates"],
     },
   ]
 
@@ -76,7 +63,7 @@ export default function ExperienceTimeline() {
             My <span className="text-blue-600">Journey</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            A timeline of growth, learning, and delivering exceptional results across diverse industries and challenges.
+            A starter journey focused on fundamentals, feedback, and steady improvement through real, small projects.
           </p>
         </div>
 
@@ -88,9 +75,8 @@ export default function ExperienceTimeline() {
             {experiences.map((exp, index) => (
               <div
                 key={index}
-                className={`relative transition-all duration-1000 ${
-                  isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
-                }`}
+                className={`relative transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
+                  }`}
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 {/* Timeline Dot */}

@@ -20,20 +20,18 @@ export default function AboutHero() {
             className={`transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"}`}
           >
             <h1 className="font-heading font-bold text-4xl md:text-6xl text-slate-900 mb-6 leading-tight">
-              Driven by passion and
-              <span className="text-pink-600"> beautiful results</span> ✨
+              Growing through practice and
+              <span className="text-pink-600"> real projects</span> ✨
             </h1>
 
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              I transform ideas into enchanting digital narratives that resonate with hearts and drive meaningful
-              growth. With over 5 years of experience in digital marketing, I've helped brands tell their stories in
-              ways that sparkle and shine.
+              I’m an apprentice digital marketer building solid fundamentals in SEO, social, content, and analytics.
+              I’ve delivered a handful of small projects and I’m focused on learning fast and delivering value.
             </p>
 
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              My approach combines creative magic with data-driven insights to deliver campaigns that not only look
-              absolutely gorgeous but perform beautifully. Every project is an opportunity to create something
-              extraordinary and memorable.
+              My approach blends curiosity with data-informed decisions. I test, measure, and iterate—keeping things
+              simple, honest, and results-aware while I grow.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -49,9 +47,9 @@ export default function AboutHero() {
             {/* Key Metrics */}
             <div className="grid grid-cols-3 gap-6">
               {[
-                { icon: Award, number: "25+", label: "Awards Won" },
-                { icon: Heart, number: "50+", label: "Happy Clients" },
-                { icon: Sparkles, number: "200%", label: "Avg ROI Boost" },
+                { icon: Award, number: "1", label: "Course Certificate" },
+                { icon: Heart, number: "3–5", label: "Projects Completed" },
+                { icon: Sparkles, number: "Ongoing", label: "Skills in Progress" },
               ].map((metric, index) => (
                 <div key={index} className="text-center">
                   <metric.icon className="h-8 w-8 text-pink-600 mx-auto mb-2" />
@@ -70,7 +68,7 @@ export default function AboutHero() {
               <div className="aspect-square bg-gradient-to-br from-pink-100 to-rose-100 rounded-2xl p-8 flex items-center justify-center">
                 <img
                   src="/digital-marketing-expert.png"
-                  alt="Digital Marketing Professional"
+                  alt="Apprentice Digital Marketer"
                   className="rounded-xl shadow-2xl"
                 />
               </div>

@@ -28,45 +28,45 @@ export default function ServicesSection() {
   const services = [
     {
       icon: Search,
-      title: "SEO Magic ✨",
+      title: "SEO Basics ✨",
       description:
-        "Boost your search rankings with enchanting SEO strategies that attract organic traffic and make your brand shine brighter.",
-      features: ["Keyword Research", "On-Page Optimization", "Technical Audits", "Link Building"],
+        "Starter keyword research and simple on-page improvements to help new sites get indexed and understood.",
+      features: ["Keyword Ideas", "Titles & Metas", "Alt Text", "Internal Links"],
     },
     {
       icon: Share2,
-      title: "Social Media Sparkle 💕",
+      title: "Social Posts 💕",
       description:
-        "Create scroll-stopping social media campaigns that build loving communities and spark meaningful connections with your audience.",
-      features: ["Content Planning", "Community Love", "Paid Advertising", "Analytics & Insights"],
+        "Lightweight content calendars and post scheduling for consistent presence on a couple of key platforms.",
+      features: ["Content Plan", "Captions", "Basic Graphics", "Scheduling"],
     },
     {
       icon: PenTool,
-      title: "Content Creation 🌸",
+      title: "Content Basics 🌸",
       description:
-        "Develop captivating content that tells your brand's beautiful story and touches hearts across all platforms.",
-      features: ["Blog Writing", "Visual Content", "Video Production", "Brand Storytelling"],
+        "Simple briefs and first-draft blog posts designed to answer beginner questions and build a content habit.",
+      features: ["Content Brief", "Outline", "Drafting", "SEO Checklist"],
     },
     {
       icon: BarChart3,
-      title: "Analytics & Insights 📊",
+      title: "Analytics Setup 📊",
       description:
-        "Transform data into beautiful insights that guide strategic decisions and optimize your campaign's performance gracefully.",
-      features: ["Performance Tracking", "ROI Analysis", "Custom Dashboards", "Strategic Recommendations"],
+        "Basic analytics and UTM conventions so you can see what’s working and what to try next.",
+      features: ["GSC Setup", "GA4 Basics", "UTM Tags", "Simple Dashboards"],
     },
     {
       icon: Mail,
-      title: "Email Marketing 💌",
+      title: "Email Setup 💌",
       description:
-        "Build and nurture loving customer relationships through heartfelt email campaigns that convert beautifully.",
-      features: ["Campaign Design", "Automation Setup", "A/B Testing", "List Segmentation"],
+        "Set up a welcome email or a short series in a free ESP and make sure tracking is in place.",
+      features: ["ESP Setup", "Welcome Flow", "Segments", "Templates"],
     },
     {
       icon: Smartphone,
-      title: "Digital Strategy 🎯",
+      title: "Digital Foundations 🎯",
       description:
-        "Comprehensive digital marketing strategies that align with your dreams and drive sustainable, beautiful growth.",
-      features: ["Market Research", "Competitor Analysis", "Growth Planning", "Multi-Channel Integration"],
+        "Help picking a few practical channels, keeping scope small, and building consistent routines.",
+      features: ["Channel Picks", "Simple Goals", "Weekly Cadence", "Review Notes"],
     },
   ]
 
@@ -77,11 +77,10 @@ export default function ServicesSection() {
           className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"}`}
         >
           <h2 className="font-heading font-bold text-4xl md:text-5xl text-slate-900 mb-6">
-            Services That <span className="text-pink-600">Sparkle</span> & Shine ✨
+            Starter Services for <span className="text-pink-600">Early Wins</span> ✨
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            From SEO magic to Social Media sparkle, I create beautiful solutions that make your brand shine and deliver
-            results that make hearts flutter.
+            Apprentice-friendly, scope-aware help to get the basics right and build momentum without overwhelm.
           </p>
         </div>
 
@@ -89,9 +88,8 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <MagneticElement key={index} strength={0.1}>
               <Card
-                className={`group hover:shadow-xl transition-all duration-500 border-0 shadow-lg hover:-translate-y-2 bg-white hover:shadow-pink-100 ${
-                  isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
-                }`}
+                className={`group hover:shadow-xl transition-all duration-500 border-0 shadow-lg hover:-translate-y-2 bg-white hover:shadow-pink-100 ${isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
+                  }`}
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <CardContent className="p-8">
@@ -113,7 +111,7 @@ export default function ServicesSection() {
                   </ul>
 
                   <Button variant="ghost" className="text-pink-600 hover:text-pink-700 p-0 h-auto group/btn">
-                    Learn More 💕
+                    View Details 💕
                     <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                   </Button>
                 </CardContent>
@@ -128,7 +126,7 @@ export default function ServicesSection() {
               size="lg"
               className="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white px-8 py-4 magnetic-hover animate-pulse-glow shadow-lg shadow-pink-200"
             >
-              Get Custom Quote ✨
+              Explore a Trial Task ✨
             </Button>
           </MagneticElement>
         </div>

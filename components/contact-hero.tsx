@@ -26,8 +26,8 @@ export default function ContactHero() {
           </div>
 
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed mb-12">
-            Ready to transform your digital presence into something absolutely gorgeous? I'm here to help you achieve
-            your marketing dreams and create campaigns that sparkle with success.
+            I’m looking for collaborative opportunities, internships, and small practice projects. If you’re open to an
+            apprentice who learns fast and communicates clearly, let’s talk.
           </p>
 
           {/* Contact Options */}
@@ -35,29 +35,28 @@ export default function ContactHero() {
             {[
               {
                 icon: MessageCircle,
-                title: "Sweet Chat",
+                title: "Quick Chat",
                 description:
-                  "Have a question? Let's discuss your project and explore beautiful possibilities together.",
+                  "Have a small task or idea? Let’s discuss scope, goals, and how I can help while learning.",
                 action: "Send Message",
               },
               {
                 icon: Calendar,
                 title: "Schedule Call",
-                description: "Book a lovely 30-minute consultation to dive deep into your marketing dreams.",
+                description: "Book a 20–30 minute call to see if we’re a good match for an internship or trial task.",
                 action: "Book Meeting",
               },
               {
                 icon: Coffee,
-                title: "Coffee Date",
-                description: "In the Bay Area? Let's meet in person and brainstorm over the cutest coffee spot.",
+                title: "Coffee Intro",
+                description: "Nearby? Happy to meet and learn more about your team, tools, and workflows.",
                 action: "Suggest Location",
               },
             ].map((option, index) => (
               <div
                 key={index}
-                className={`text-center transition-all duration-1000 ${
-                  isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
-                }`}
+                className={`text-center transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
+                  }`}
                 style={{ animationDelay: `${(index + 1) * 200}ms` }}
               >
                 <div className="w-16 h-16 bg-gradient-to-br from-pink-100 to-rose-100 rounded-2xl flex items-center justify-center mx-auto mb-4 hover:bg-gradient-to-br hover:from-pink-500 hover:to-rose-500 hover:text-white transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl hover:scale-105">

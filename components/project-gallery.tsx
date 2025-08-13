@@ -28,104 +28,70 @@ export default function ProjectGallery() {
   const projects = [
     {
       id: 1,
-      title: "E-commerce Growth Campaign",
-      client: "TechStyle Fashion",
-      category: "SEO",
+      title: "Local Bakery SEO Basics",
+      client: "Practice Project",
+      category: "SEO Basics",
       image: "/modern-ecommerce-dashboard.png",
       description:
-        "Comprehensive SEO and content strategy that increased organic traffic by 300% and boosted conversion rates by 45% within 6 months.",
+        "Keyword research and on-page fixes for a small local bakery site. Focused on titles, meta descriptions, and internal links.",
       metrics: [
-        { icon: TrendingUp, label: "Traffic Increase", value: "300%" },
-        { icon: Users, label: "New Customers", value: "12K+" },
-        { icon: Clock, label: "Project Duration", value: "6 months" },
+        { icon: TrendingUp, label: "Indexed Pages", value: "+12" },
+        { icon: Users, label: "GSC Clicks (MoM)", value: "+18%" },
+        { icon: Clock, label: "Duration", value: "3 weeks" },
       ],
-      tags: ["SEO", "Content Strategy", "Analytics"],
-      results: "Generated $2.5M in additional revenue",
+      tags: ["Keyword Research", "On-page", "GSC"],
+      results: "Improved visibility for 8 priority terms",
       featured: true,
     },
     {
       id: 2,
-      title: "Social Media Transformation",
-      client: "Urban Wellness Co.",
-      category: "Social Media",
+      title: "Social Post Series for Nonprofit",
+      client: "Volunteer",
+      category: "Social Posts",
       image: "/social-media-analytics-dashboard.png",
       description:
-        "Complete social media overhaul resulting in 500% increase in engagement and 200% growth in follower base across all platforms.",
+        "Planned and scheduled a month of Instagram posts with simple visuals and captions. Tracked engagement and iteration notes.",
       metrics: [
-        { icon: Users, label: "Follower Growth", value: "200%" },
-        { icon: TrendingUp, label: "Engagement Rate", value: "500%" },
-        { icon: Award, label: "Viral Posts", value: "15+" },
+        { icon: Users, label: "Avg. Engagement", value: "+9%" },
+        { icon: TrendingUp, label: "Reach", value: "+14%" },
+        { icon: Award, label: "Posts", value: "20" },
       ],
-      tags: ["Social Media", "Content Creation", "Community Management"],
-      results: "Built a community of 50K+ engaged followers",
+      tags: ["Content Calendar", "Canva", "Scheduling"],
+      results: "More consistent posting cadence",
       featured: false,
     },
     {
       id: 3,
-      title: "B2B Lead Generation System",
-      client: "CloudTech Solutions",
-      category: "Analytics",
-      image: "/b2b-marketing-dashboard.png",
+      title: "Email Welcome Flow Setup",
+      client: "Practice Store",
+      category: "Email Setup",
+      image: "/placeholder-mxiaw.png",
       description:
-        "Developed automated lead generation system using advanced analytics and personalization, resulting in 400% increase in qualified leads.",
+        "Drafted copy and set up a 2-step welcome series in a free ESP. Added UTM tags and basic segmenting.",
       metrics: [
-        { icon: TrendingUp, label: "Lead Quality", value: "400%" },
-        { icon: Users, label: "MQLs Generated", value: "2,500+" },
-        { icon: Clock, label: "Sales Cycle", value: "-30%" },
+        { icon: TrendingUp, label: "Open Rate", value: "28%" },
+        { icon: Users, label: "Subscribers", value: "350" },
+        { icon: Clock, label: "Flow Steps", value: "2" },
       ],
-      tags: ["Analytics", "Automation", "Lead Generation"],
-      results: "Reduced cost per lead by 60%",
-      featured: true,
+      tags: ["ESP Setup", "UTM", "Segmentation"],
+      results: "Baseline flow ready for testing",
+      featured: false,
     },
     {
       id: 4,
-      title: "Email Marketing Revival",
-      client: "Artisan Marketplace",
-      category: "Email Marketing",
-      image: "/placeholder-mxiaw.png",
-      description:
-        "Revitalized email marketing strategy with personalized campaigns, achieving industry-leading open rates and driving significant revenue growth.",
-      metrics: [
-        { icon: TrendingUp, label: "Open Rate", value: "45%" },
-        { icon: Users, label: "Subscribers", value: "25K+" },
-        { icon: Award, label: "Revenue Growth", value: "180%" },
-      ],
-      tags: ["Email Marketing", "Personalization", "Automation"],
-      results: "Generated $800K in email-driven revenue",
-      featured: false,
-    },
-    {
-      id: 5,
-      title: "Content Marketing Mastery",
-      client: "FinTech Innovators",
-      category: "Content",
+      title: "Content Brief and Blog Draft",
+      client: "Personal Blog",
+      category: "Content Briefs",
       image: "/content-marketing-strategy.png",
       description:
-        "Strategic content marketing approach that positioned the brand as a thought leader, resulting in massive organic growth and industry recognition.",
+        "Created a content brief and first draft for a beginner topic. Used a simple outline and SEO checklist.",
       metrics: [
-        { icon: TrendingUp, label: "Organic Traffic", value: "250%" },
-        { icon: Users, label: "Content Shares", value: "10K+" },
-        { icon: Award, label: "Industry Awards", value: "3" },
+        { icon: TrendingUp, label: "Word Count", value: "1.1k" },
+        { icon: Users, label: "Edits", value: "3 rounds" },
+        { icon: Award, label: "Checklist Items", value: "10/10" },
       ],
-      tags: ["Content Strategy", "Thought Leadership", "SEO"],
-      results: "Established brand as industry thought leader",
-      featured: false,
-    },
-    {
-      id: 6,
-      title: "Multi-Channel Campaign",
-      client: "Sustainable Living Brand",
-      category: "Analytics",
-      image: "/multi-channel-marketing-dashboard.png",
-      description:
-        "Integrated multi-channel marketing campaign that unified brand messaging across all touchpoints, resulting in exceptional ROI and brand awareness.",
-      metrics: [
-        { icon: TrendingUp, label: "ROI Increase", value: "320%" },
-        { icon: Users, label: "Brand Awareness", value: "85%" },
-        { icon: Award, label: "Campaign Awards", value: "2" },
-      ],
-      tags: ["Multi-Channel", "Brand Strategy", "Analytics"],
-      results: "Achieved 320% ROI across all channels",
+      tags: ["Brief", "Drafting", "SEO Checklist"],
+      results: "Published and shared with 2 mentors",
       featured: true,
     },
   ]
@@ -137,9 +103,8 @@ export default function ProjectGallery() {
           {projects.map((project, index) => (
             <Card
               key={project.id}
-              className={`group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 ${
-                project.featured ? "lg:col-span-2" : ""
-              } ${isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"}`}
+              className={`group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 ${project.featured ? "lg:col-span-2" : ""
+                } ${isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"}`}
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className={`${project.featured ? "lg:flex" : ""}`}>
@@ -199,7 +164,7 @@ export default function ProjectGallery() {
 
                   {/* Action Button */}
                   <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white group/btn">
-                    View Case Study
+                    View Notes
                     <ExternalLink className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                   </Button>
                 </CardContent>

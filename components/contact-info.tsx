@@ -28,29 +28,29 @@ export default function ContactInfo() {
     {
       icon: Mail,
       title: "Email",
-      value: "hello@digitalcraft.com",
-      description: "Best for detailed project discussions",
-      action: "mailto:hello@digitalcraft.com",
+      value: "apprentice@digitalcraft.com",
+      description: "Best for scope, timelines, and simple briefs",
+      action: "mailto:apprentice@digitalcraft.com",
     },
     {
       icon: Phone,
       title: "Phone",
       value: "+1 (555) 123-4567",
-      description: "Available Mon-Fri, 9AM-6PM PST",
+      description: "By appointment. Please email to schedule.",
       action: "tel:+15551234567",
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "San Francisco, CA",
-      description: "Available for local meetings",
+      value: "Remote / San Francisco, CA",
+      description: "Open to virtual or local coffee chats",
       action: "#",
     },
     {
       icon: Clock,
       title: "Response Time",
-      value: "Within 24 hours",
-      description: "Usually much faster!",
+      value: "Within 24–48 hours",
+      description: "Often faster for short notes",
       action: "#",
     },
   ]
@@ -59,19 +59,19 @@ export default function ContactInfo() {
     {
       icon: Linkedin,
       name: "LinkedIn",
-      url: "https://linkedin.com/in/digitalcraft",
+      url: "https://linkedin.com/in/your-handle",
       color: "hover:text-blue-600",
     },
     {
       icon: Twitter,
       name: "Twitter",
-      url: "https://twitter.com/digitalcraft",
+      url: "https://twitter.com/your-handle",
       color: "hover:text-sky-500",
     },
     {
       icon: Instagram,
       name: "Instagram",
-      url: "https://instagram.com/digitalcraft",
+      url: "https://instagram.com/your-handle",
       color: "hover:text-pink-500",
     },
   ]
@@ -84,8 +84,8 @@ export default function ContactInfo() {
         >
           <h2 className="font-heading font-bold text-3xl text-slate-900 mb-4">Get In Touch</h2>
           <p className="text-slate-600 leading-relaxed">
-            Ready to elevate your digital marketing? Choose the best way to connect and let's start building something
-            amazing together.
+            Exploring an intern or junior collaborator? Reach out with a small brief or trial task—happy to learn and
+            contribute.
           </p>
         </div>
 
@@ -93,9 +93,8 @@ export default function ContactInfo() {
           {contactMethods.map((method, index) => (
             <Card
               key={index}
-              className={`border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 ${
-                isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
-              }`}
+              className={`border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 ${isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
+                }`}
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <CardContent className="p-6">
@@ -126,9 +125,8 @@ export default function ContactInfo() {
 
         {/* Social Links */}
         <Card
-          className={`mt-8 border-0 shadow-lg transition-all duration-1000 ${
-            isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
-          }`}
+          className={`mt-8 border-0 shadow-lg transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
+            }`}
           style={{ animationDelay: "600ms" }}
         >
           <CardContent className="p-6">
@@ -152,9 +150,8 @@ export default function ContactInfo() {
 
         {/* FAQ Section */}
         <Card
-          className={`mt-8 border-0 shadow-lg transition-all duration-1000 ${
-            isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
-          }`}
+          className={`mt-8 border-0 shadow-lg transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
+            }`}
           style={{ animationDelay: "800ms" }}
         >
           <CardContent className="p-6">
@@ -162,15 +159,15 @@ export default function ContactInfo() {
             <div className="space-y-3 text-sm">
               <div>
                 <p className="font-semibold text-slate-700">How quickly can we start?</p>
-                <p className="text-slate-600">Most projects can begin within 1-2 weeks of contract signing.</p>
+                <p className="text-slate-600">I can usually start a small trial task within a week.</p>
               </div>
               <div>
                 <p className="font-semibold text-slate-700">Do you work with small businesses?</p>
-                <p className="text-slate-600">I work with businesses of all sizes, from startups to Fortune 500.</p>
+                <p className="text-slate-600">Yes—solo founders, nonprofits, and small teams are a great fit.</p>
               </div>
               <div>
-                <p className="font-semibold text-slate-700">What's included in your proposals?</p>
-                <p className="text-slate-600">Detailed strategy, timeline, deliverables, and transparent pricing.</p>
+                <p className="font-semibold text-slate-700">What deliverables can you provide?</p>
+                <p className="text-slate-600">Simple briefs, checklists, reports, content drafts, and setup docs.</p>
               </div>
             </div>
           </CardContent>
