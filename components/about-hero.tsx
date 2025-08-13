@@ -67,7 +67,7 @@ export default function AboutHero() {
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-pink-100 to-rose-100 rounded-2xl p-8 flex items-center justify-center">
                 <img
-                  src="/digital-marketing-expert.png"
+                  src="/Snapchat-170276330.jpg"
                   alt="Apprentice Digital Marketer"
                   className="rounded-xl shadow-2xl"
                 />
