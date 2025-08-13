@@ -1,8 +1,8 @@
 import type React from "react"
 import type { Metadata } from "next"
+import ScrollProgress from "@/components/scroll-progress"
 import { Playfair_Display, Open_Sans } from "next/font/google"
 import "./globals.css"
-import ScrollProgress from "@/components/scroll-progress"
 
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
