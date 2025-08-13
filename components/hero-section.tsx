@@ -9,17 +9,17 @@ import AnimatedText from "./animated-text"
 
 export default function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
 
   useEffect(() => {
     setIsVisible(true)
 
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY })
-    }
+    // const handleMouseMove = (e: MouseEvent) => {
+    //   setMousePosition({ x: e.clientX, y: e.clientY })
+    // }
 
-    window.addEventListener("mousemove", handleMouseMove)
-    return () => window.removeEventListener("mousemove", handleMouseMove)
+    // window.addEventListener("mousemove", handleMouseMove)
+    // return () => window.removeEventListener("mousemove", handleMouseMove)
   }, [])
 
   return (
@@ -36,28 +36,28 @@ export default function HeroSection() {
         ></div>
       </ParallaxBackground>
 
-      <div
-        className="fixed w-4 h-4 bg-pink-400 rounded-full pointer-events-none z-50 mix-blend-difference"
+      {/* <div
+        className="fixed w-6 h-6 rounded-full pointer-events-none z-50 mix-blend-difference"
         style={{
           left: mousePosition.x - 8,
           top: mousePosition.y - 8,
           transition: "all 0.1s ease-out",
         }}
-      />
+      ><Heart className="h-6 w-6 text-green-700" /></div> */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div
           className={`transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"}`}
         >
           <div className="font-heading font-bold text-5xl md:text-7xl lg:text-8xl text-slate-900 mb-6 leading-tight">
-            <AnimatedText text="Transforming Ideas" className="block" />
-            <AnimatedText text="into Beautiful" className="block text-pink-500" delay={300} />
-            <AnimatedText text="Digital Experiences" className="block text-rose-600" delay={600} />
+            <AnimatedText text="Learning by Doing" className="block" />
+            <AnimatedText text="one project at a time" className="block text-pink-500" delay={300} />
+            <AnimatedText text="in Digital Marketing" className="block text-rose-600" delay={600} />
           </div>
 
           <p className="text-xl md:text-2xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in-up stagger-4">
-            Creating elegant digital marketing solutions with a feminine touch that captivate audiences and drive
-            meaningful connections.
+            Early-career digital marketer focused on hands-on practice. I’ve completed a few real projects and I’m
+            growing fast with each brief, campaign, and experiment.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -72,7 +72,7 @@ export default function HeroSection() {
               </Button>
             </MagneticElement>
 
-            <MagneticElement>
+            {/* <MagneticElement>
               <Button
                 variant="outline"
                 size="lg"
@@ -81,15 +81,15 @@ export default function HeroSection() {
                 <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
                 Watch Demo
               </Button>
-            </MagneticElement>
+            </MagneticElement> */}
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             {[
-              { number: "150+", label: "Projects Completed" },
-              { number: "98%", label: "Client Satisfaction" },
-              { number: "5+", label: "Years Experience" },
-              { number: "50+", label: "Happy Clients" },
+              { number: "1–5", label: "Projects Shipped" },
+              { number: "100%", label: "Eager to Learn" },
+              { number: "~1", label: "Year Practicing" },
+              { number: "Open", label: "to Mentorship" },
             ].map((stat, index) => (
               <div key={index} className={`text-center animate-scale-in stagger-${index + 1}`}>
                 <div className="font-heading font-bold text-3xl md:text-4xl text-pink-500 mb-2">{stat.number}</div>
@@ -100,11 +100,11 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-pink-400 rounded-full flex justify-center animate-pulse-glow">
           <div className="w-1 h-3 bg-pink-400 rounded-full mt-2 animate-pulse"></div>
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }
