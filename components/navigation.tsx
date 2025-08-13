@@ -28,14 +28,13 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg shadow-pink-100/50" : "bg-transparent"
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg shadow-pink-100/50" : "bg-transparent"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="font-heading font-bold text-xl text-pink-600">
-            Bella Digital ✨
+            Riya Digital ✨
           </Link>
 
           {/* Desktop Navigation */}
@@ -44,9 +43,8 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`transition-colors duration-200 font-medium ${
-                  pathname === item.href ? "text-pink-600" : "text-slate-700 hover:text-pink-600"
-                }`}
+                className={`transition-colors duration-200 font-medium ${pathname === item.href ? "text-pink-600" : "text-slate-700 hover:text-pink-600"
+                  }`}
               >
                 {item.label}
               </Link>
@@ -70,11 +68,10 @@ export default function Navigation() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`block px-3 py-2 transition-colors duration-200 rounded-lg ${
-                    pathname === item.href
+                  className={`block px-3 py-2 transition-colors duration-200 rounded-lg ${pathname === item.href
                       ? "text-pink-600 bg-pink-50"
                       : "text-slate-700 hover:text-pink-600 hover:bg-pink-50"
-                  }`}
+                    }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}

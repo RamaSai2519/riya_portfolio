@@ -17,7 +17,7 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Bella Digital | Riya's Portfolio",
+  title: "Riya Digital | Riya's Portfolio",
   description:
     "Transforming Ideas into Beautiful Digital Experiences.",
 }
