@@ -17,9 +17,9 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Portfolio | Creative Solutions",
+  title: "Bella Digital | Riya's Portfolio",
   description:
-    "Transforming Ideas into Beautiful Digital Experiences - Professional digital marketing portfolio with a feminine touch.",
+    "Transforming Ideas into Beautiful Digital Experiences.",
 }
 
 export default function RootLayout({
