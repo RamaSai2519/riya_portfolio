@@ -20,7 +20,6 @@ export const metadata: Metadata = {
   title: "Digital Marketing Portfolio | Creative Solutions",
   description:
     "Transforming Ideas into Beautiful Digital Experiences - Professional digital marketing portfolio with a feminine touch.",
-  generator: "v0.app",
 }
 
 export default function RootLayout({
